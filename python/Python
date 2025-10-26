@@ -1,0 +1,23 @@
+# Activity01
+for i in range(1,11):
+    print(f"23 x {i}) = {23*i}")
+    # Activity2
+
+    n= int(input("enter the number of rows: "))
+    for i in range(1,n+1):
+        print('*',end=" ")
+        print()
+
+# activity3
+total_sum= sum(range(1,21))
+print(f"the sum of the first ten natural numbers is : {total_sum} ")
+
+# Activity4
+num = int(input("enter a number: "))
+if num>1:
+    for i in range(2,num):
+        if (num%i)==0:
+            print(f"{num}is not a prime number")
+            break
+        else:
+            print(f"{num}is a prime number")
