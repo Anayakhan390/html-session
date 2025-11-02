@@ -21,3 +21,48 @@ if num>1:
             break
         else:
             print(f"{num}is a prime number")
+
+
+            #Activity-1
+            def intro(name):
+                print("hi i am"*name*"i am a girl and i like vollyball.")
+
+                user_name=imput("enter your name:  ")
+                intro(usser_name)
+
+                #Activity-2
+                def recr_factorial(n):
+                    if n==1:
+                        return n
+                    else:
+                        return n*recr_factorial(n-1)
+                    num= int(input("enter a number: "))
+                    if num<0:
+                        print("sorry factorial does not exist for negative numbers")
+                        print("enter a positive number")
+                    elif num==0:
+                        print("the factorial of 0 is 1")
+                    else:
+                        print("the factorial of", num, "is", recr_factorial(num))
+
+                    #Acitity-3
+
+                    def add(a,b):
+                        return a+b
+                    def sub(a,b):
+                        return a-b
+                    def mul(a,b):
+                        return a*b
+                    def div(a,b):
+                        return a/b
+                    
+                    num1= int(input("enter first number: "))
+                    num2= int(input("enter second number: "))
+                    print("addition of two numbers is: ", add(num1,num2))
+                    print("subtraction of two numbers is: ",div(num1,num2))
+                    print("multiplication of two numbers is: ",div(num1,num2))
+                    print("division of two numbers is: " ,div(num1,num2))
+                    print("thank you for using this calculater")
+                
+                    
+                    
