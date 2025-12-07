@@ -64,92 +64,147 @@
 #                     print("division of two numbers is: " ,div(num1,num2))
 #                     print("thank you for using this calculater")
 
-                    # Activity 1
-lst = ['apple', 'banana', 'fig', 'grape' , 'cherry', 'elderberry']
-print('The original list is : ', lst)
-print('length of the lst is : ', len(lst))
+#                     # Activity 1
+# lst = ['apple', 'banana', 'fig', 'grape' , 'cherry', 'elderberry']
+# print('The original list is : ', lst)
+# print('length of the lst is : ', len(lst))
 
-print('The first element of the list is : ', lst[0])
-print('The last element of the list is : ', lst[5])
-print('The last element of the list is : ', lst[-1])
+# print('The first element of the list is : ', lst[0])
+# print('The last element of the list is : ', lst[5])
+# print('The last element of the list is : ', lst[-1])
 
-lst.append('kiwi')
-print('The list after appending kiwi is : ', lst)
+# lst.append('kiwi')
+# print('The list after appending kiwi is : ', lst)
 
-lst.remove('fig')
-print('The list after removing fig is : ', lst)
+# lst.remove('fig')
+# print('The list after removing fig is : ', lst)
 
-lst.sort()
-print('The list after sorting is : ', lst)
+# lst.sort()
+# print('The list after sorting is : ', lst)
 
-lst.reverse()
-print('The list after reversing is : ', lst)
+# lst.reverse()
+# print('The list after reversing is : ', lst)
 
-lst.clear()
-print('The list after clearing is : ', lst )
-print(lst)
-
-
-# # Activity-2
-my_dict={
-    'name': 'John',
-    'age': 25,
-    'city': 'New York',
-    'country': 'USA',
-    'email': 'john@example.com',
-    'phone': '123-456-7890'
-}
-
-print('The original dictionary is : ', my_dict)
-print('The value of the key name is : ', my_dict['name'])
-print('The value of the key age is : ', my_dict['age'])
-
-my_dict['state'] = 'New York'
-print('The dictionary after adding state is : ', my_dict)
-
-# # Activity-3
-def test(lst1):
-  result={}
-  for item in lst1:
-    result[item[0]]=item[1:]
-  return result
-
-student_list = [('John', 25, 'New York'), ('Jane', 30, 'Los Angeles'), ('Jack', 28, 'Chicago')]
-
-print(test(student_list))
-print("\nOriginal list of lists : ", student_list)
-print("Convert the said list of lists to a dictionary : ",student_list)
-
-# ACTIVITY -1- DATA STRUCTURE-2 IN PY
-my_tuple =()
-print(my_tuple)
-my_tuple =(1,2,3)
-print(my-tuple)
+# lst.clear()
+# print('The list after clearing is : ', lst )
+# print(lst)
 
 
-my_tuple -(1,2,3, "hi")
-print(my_tuple)
+# # # Activity-2
+# my_dict={
+#     'name': 'John',
+#     'age': 25,
+#     'city': 'New York',
+#     'country': 'USA',
+#     'email': 'john@example.com',
+#     'phone': '123-456-7890'
+# }
 
-my_tuple =(1,2,3, "hi" , 4.5)
-print(my_tuple)
+# print('The original dictionary is : ', my_dict)
+# print('The value of the key name is : ', my_dict['name'])
+# print('The value of the key age is : ', my_dict['age'])
 
-my_tuple =(1,2,3, "hi")
-print(my_tuple)
-print(my_tuple[0])
-print(my_tuple[1])
-print(my_tuple[2])
+# my_dict['state'] = 'New York'
+# print('The dictionary after adding state is : ', my_dict)
 
-print(my_tuple[0:3])
+# # # Activity-3
+# def test(lst1):
+#   result={}
+#   for item in lst1:
+#     result[item[0]]=item[1:]
+#   return result
 
-# # Activity-2
-my_set={1,2,3,4,5,6,7,8,9}
-print("my_set", my_set)
+# student_list = [('John', 25, 'New York'), ('Jane', 30, 'Los Angeles'), ('Jack', 28, 'Chicago')]
 
-my_set.add(10)
-print("update my_set", my_set)
+# print(test(student_list))
+# print("\nOriginal list of lists : ", student_list)
+# print("Convert the said list of lists to a dictionary : ",student_list)
 
-set1=my_set
-set2={10,1,2,3,}
+# # ACTIVITY -1- DATA STRUCTURE-2 IN PY
+# my_tuple =()
+# print(my_tuple)
+# my_tuple =(1,2,3)
+# print(my-tuple)
+
+
+# my_tuple -(1,2,3, "hi")
+# print(my_tuple)
+
+# my_tuple =(1,2,3, "hi" , 4.5)
+# print(my_tuple)
+
+# my_tuple =(1,2,3, "hi")
+# print(my_tuple)
+# print(my_tuple[0])
+# print(my_tuple[1])
+# print(my_tuple[2])
+
+# print(my_tuple[0:3])
+
+# # # Activity-2
+# my_set={1,2,3,4,5,6,7,8,9}
+# print("my_set", my_set)
+
+# my_set.add(10)
+# print("update my_set", my_set)
+
+# set1=my_set
+# set2={10,1,2,3,14,15}
+# print("difference : ", set1.difference(set2))
+
+# # # activity-3
+# setun1={"green", "blue"}
+# setun2={"blue", "yellow"}
+# print("union", setun1.union(setun2))
+
+# # # # Activity-4
+# setx={"apple", "bannana"}
+# sety={"bannana", "orange"}
+# print("intersection", setx.intersection(sety))
+
+# Activity-1---scott-OOPS concept
+class person(object):
+  def __init__(self, name, age):
+    self.name = name
+    self.age =age
+  def display(self):
+    print(self.name, self.age)
+
+  class empoloyee(person):
+    def __init__( self, name, age, empid):
+      self.empid = empid
+      super().__init__(name, age)
+
+  a=Emplyee("riya", 25, 1001)
+  a.display()
+    
+    # # Activity-2
+    
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
+  def printname(self):
+      print(self.firstname, self.lastname)
+      
+class student(preson):
+        def __init__(self, fname,lname,year):
+           supper().__init__(fname, lanme)
+          self.graduationyear =year
+        x=student("mike", "ttyson", 2025)
+        x.printname()
+        print(x.graduationyear)
+        
+        
+        # Activity-3
+class parrot:
+        speices-{"birds"}
+        def __init__(self, name, age):
+        self.name = name
+
+
+
+
+
 
 
                 
