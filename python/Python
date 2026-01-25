@@ -328,6 +328,7 @@ class animal(ABC):
             R.move()
             K = snake()
             K.move()
+            
 
             
    
