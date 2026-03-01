@@ -1,1 +1,1 @@
-file in write mode ....hi! I am penguin.I am a 1yr old./n File in append mode ....Hi! I am penguin. I am 1 yr old.
+Hi! I am penguin and i am 1 yer old.
