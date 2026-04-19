@@ -1,0 +1,44 @@
+#program to show constant time complexity
+
+def printnumber(n):
+    iteration=0
+    print("the number entered by used is",n)
+    iteration+=1
+    print("Total iterations done by the code is ",iteration,"\n")
+
+printnumber(10)
+printnumber(20)
+print("\n with any 'n' the time taken by our code wont change")
+
+    #Activity-2 0(n)Time
+
+def OnTime(n):
+    iteration=0
+    for i in range(1,n+1):
+        iteration+=1
+    print("when n is ",n,"Iterations=",iteration)
+
+OnTime(10)
+OnTime(20)
+OnTime(42)
+
+print("\n with every'n' the time taken and iterations will increase")
+
+
+#Activity-3 0(n^2)Time
+def ONSquareTime(n):
+    iteration=0
+    for i in range(0,n):
+        for j in range(0,n):
+            print("*", end =" ")
+            iteration+=1
+        print("")
+    print("\When n is ",n,"Iterations =",iteration,"\n")
+                
+ONSquareTime(5)
+ONSquareTime(4)
+ONSquareTime(3)
+
+print("\nWith every'n' the time taken equals n^2")
+print("0(n^2)")
+    
