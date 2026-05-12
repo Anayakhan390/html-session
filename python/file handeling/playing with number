@@ -1,0 +1,22 @@
+number=int(input("enter a number : "))
+original_num= number
+reverse_num=0
+while number>0:
+    digit=number%10
+    reverse_num=reverse_num*10+digit
+    number//=10
+if original_num ==reverse_num:
+    print("number is palidrome", reverse_num)
+    print("reverse number is :", original_num)
+    print("original number is :", original_num)
+else:
+    print("nummber is not palidrome ")
+
+largest_num= int(input("enter a largest number :"))
+smallest_num= int(input("enter a smallest number :"))
+while (smallest_num):
+    numberstore=smallest_num
+    smallest_num=largest_num%smallest_num
+    largest_num=numberstore
+print("GCD is :", largest_num)
+print("HCF is :" largest_num)
